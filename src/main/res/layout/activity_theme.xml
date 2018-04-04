@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paohdigitalyouth.paohkeyboard.ThemeActivity">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="3dp"
+            android:background="@drawable/custom_frame_bg"
+            android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/tvCustom"
+                android:text="Custom Keyboard Background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_below="@id/tvCustom"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:onClick="chooseImage"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Choose from image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        app:srcCompat="@drawable/choose_from_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:onClick="chooseColor"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Choose from Color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        app:srcCompat="@drawable/choose_from_color"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@id/custom"
+            android:id="@+id/tvDefault"
+            android:text="Default Keyboard Background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_below="@id/tvDefault"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/kb1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:id="@+id/dark"
+                android:src="@drawable/dark_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/kb1IV"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/checked"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+        </RelativeLayout>
+
+        //PaOh
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/kb2"
+            android:layout_below="@id/kb1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+           <ImageView
+               android:id="@+id/paoh"
+               android:src="@drawable/paoh_preview"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/kb2IV"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/checked"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

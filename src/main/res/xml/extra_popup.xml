@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+	<Keyboard xmlns:android= "http://schemas.android.com/apk/res/android"
+		android:keyWidth="15.000002%p"
+		android:keyHeight="50dp"
+		android:horizontalGap="0.0px"
+		android:verticalGap="0.0px" >
+		
+ <Row>
+    <Key android:codes="-201"
+		android:keyIcon="@drawable/copy"
+		android:iconPreview="@drawable/copy"/>
+	<Key android:codes="2402" android:isRepeatable="true"
+		android:keyIcon="@drawable/up"
+		android:iconPreview="@drawable/up"/>
+	<Key android:codes="-203"
+		android:keyIcon="@drawable/paste"
+		android:iconPreview="@drawable/paste"/>
+	<Key android:codes="-202"
+		android:keyIcon="@drawable/cut"
+		android:iconPreview="@drawable/cut"/>
+	<Key android:codes="-5" 
+		android:keyIcon="@drawable/back_space"
+		android:iconPreview="@drawable/back_space" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+</Row>
+<Row>
+	<Key android:codes="2400" android:isRepeatable="true"
+		android:keyIcon="@drawable/left"
+		android:iconPreview="@drawable/left"/>
+	<Key android:codes="2403" android:isRepeatable="true"
+		android:keyIcon="@drawable/down"
+		android:iconPreview="@drawable/down"/>
+	<Key android:codes="2401" android:isRepeatable="true"
+		android:keyIcon="@drawable/right"
+		android:iconPreview="@drawable/right"/>
+	<Key android:codes="-200"
+		android:keyIcon="@drawable/select_all"
+		android:iconPreview="@drawable/select_all"/>
+	<Key android:codes="2300"
+		android:keyIcon="@drawable/kb_hide"
+		android:iconPreview="@drawable/kb_hide"/>
+</Row>
+
+</Keyboard>

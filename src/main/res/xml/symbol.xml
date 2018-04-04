@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10.000002%p"
+    android:horizontalGap="0.0px"
+    android:verticalGap="0.0px"  
+    android:keyHeight="@dimen/key_height">
+	
+	<Row android:keyWidth="10.000002%p">
+		<Key android:codes="49" android:popupKeyboard="@xml/popup" android:popupCharacters="¹½⅓¼⅛" android:keyLabel="1" />
+		<Key android:codes="50" android:popupKeyboard="@xml/popup"  android:popupCharacters="²⅔" android:keyLabel="2" />
+		<Key android:codes="51" android:popupKeyboard="@xml/popup" android:popupCharacters="³¾⅜" android:keyLabel="3" />
+		<Key android:codes="52" android:popupKeyboard="@xml/popup" android:popupCharacters="⁴" android:keyLabel="4" />
+		<Key android:codes="53" android:popupKeyboard="@xml/popup" android:popupCharacters="⅝" android:keyLabel="5" />
+		<Key android:codes="54" android:keyLabel="6" />
+		<Key android:codes="55" android:popupKeyboard="@xml/popup" android:popupCharacters="⅞" android:keyLabel="7" />
+		<Key android:codes="56" android:popupKeyboard="@xml/popup" android:popupCharacters="" android:keyLabel="8" />
+		<Key android:codes="57" android:popupKeyboard="@xml/popup" android:popupCharacters="" android:keyLabel="9" />
+		<Key android:codes="48" android:popupKeyboard="@xml/popup" android:popupCharacters="ⁿ∅" android:keyEdgeFlags="right" android:keyLabel="0" />
+	</Row>
+	<Row android:keyWidth="10.000002%p">
+		<Key  android:keyOutputText="\@"   android:keyEdgeFlags="left" android:keyLabel="\@" />
+		<Key  android:keyOutputText="\#"   android:keyLabel="#" />
+		<Key  android:keyOutputText="$"   android:keyLabel="$" />
+		<Key  android:keyOutputText="%"   android:keyLabel="%" />
+		<Key  android:keyOutputText="&amp;"   android:keyLabel="&amp;" />
+		<Key  android:keyOutputText="*"   android:keyLabel="*" />
+		<Key  android:keyOutputText="-"   android:keyLabel="-" />
+		<Key  android:keyOutputText="+"   android:keyLabel="+"  />
+		<Key  android:keyOutputText="("   android:keyLabel="(" />
+		<Key  android:keyOutputText=")"   android:keyEdgeFlags="right" android:keyLabel=")" />
+	</Row>
+
+	<Row android:keyWidth="10.000002%p">
+		<Key  android:keyOutputText="…"   android:keyEdgeFlags="left" android:keyLabel="…" />
+		<Key  android:keyOutputText="!"   android:keyLabel="!" />
+		<Key  android:keyOutputText="&quot;"   android:keyLabel="&quot;" />
+		<Key  android:keyOutputText="&apos;"   android:keyLabel="&apos;" />
+		<Key  android:keyOutputText="÷"   android:keyLabel="÷" />
+		<Key  android:keyOutputText=":"   android:keyLabel=":" />
+		<Key  android:keyOutputText=";"   android:keyLabel=";" />
+		<Key  android:keyOutputText="/"   android:keyLabel="/"  />
+		<Key  android:keyOutputText="\\"   android:keyLabel="\\" />
+		<Key  android:keyOutputText="="   android:keyEdgeFlags="right" android:keyLabel="=" />
+	</Row>
+
+	<Row android:keyWidth="10.000002%p">
+		<Key android:codes="-103" android:keyEdgeFlags="left" android:isModifier="true" android:isSticky="false" 
+			android:keyIcon="@drawable/en"
+			android:iconPreview="@drawable/en" />
+		<Key android:codes="-101"   
+			android:keyIcon="@drawable/paoh"
+			android:iconPreview="@drawable/paoh" />
+		<Key  android:keyOutputText="{" android:keyLabel="{" />
+		<Key  android:keyOutputText="}"   android:keyLabel="}" />
+		<Key  android:keyOutputText="["   android:keyLabel="[" />
+		<Key  android:keyOutputText="]"   android:keyLabel="]" />
+		<Key  android:keyOutputText="_"   android:keyLabel="_" />
+		<Key  android:keyOutputText="&lt;"   android:keyLabel="&lt;" />
+		<Key  android:keyOutputText="&gt;"   android:keyLabel="&gt;" />
+		<Key android:codes="-5" 
+			android:keyIcon="@drawable/back_space"
+			android:iconPreview="@drawable/back_space"
+			android:isRepeatable="true"/>
+
+	</Row>
+	<Row android:rowEdgeFlags="bottom" android:keyWidth="10.000002%p">
+		<Key  android:keyOutputText="\?"   android:keyEdgeFlags="left" android:keyLabel="\?" />
+		<Key  android:keyOutputText="°"   android:keyLabel="°" />
+		<Key  android:keyOutputText="^"   android:keyLabel="^" />
+		<Key  android:keyOutputText="£"   android:keyLabel="£" />
+		<Key  android:keyOutputText="~"   android:keyLabel="~" />
+		<Key  android:keyOutputText="√"   android:keyLabel="√" />
+		<Key  android:keyOutputText="`"   android:keyLabel="`" />
+		<Key  android:keyOutputText="|"   android:keyLabel="|"  />
+		<Key android:codes="32" android:keyLabel="" />
+		<Key android:codes="10" android:keyEdgeFlags="right" android:isModifier="true" 
+			android:keyIcon="@drawable/return_kb"
+			android:iconPreview="@drawable/return_kb"/>
+
+	</Row>
+
+</Keyboard>

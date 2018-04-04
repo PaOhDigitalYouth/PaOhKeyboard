@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.paohdigitalyouth.paohkeyboard.AdiKa"
+    tools:showIn="@layout/app_bar_adi_ka">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/iv"
+        android:text="PaOh Keyboard | ပအိုဝ္ၒကီးဘုတ္"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/enable_bg"
+        android:layout_marginTop="10dp"
+        android:id="@+id/enableBtn"
+        android:layout_below="@id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Enable Keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/select_bg"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/selectBtn"
+        android:layout_below="@id/enableBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Select Keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/test_bg"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/testBtn"
+        android:layout_below="@id/selectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Test Keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/help_bg"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/helpBtn"
+        android:layout_below="@id/testBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1325188641119577/1690917782">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:onClick="dev"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_above="@id/adView"
+        android:gravity="center_horizontal"
+        android:text="Developed By PaOh Digital Youth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

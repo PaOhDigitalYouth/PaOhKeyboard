@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Keyboard xmlns:android= "http://schemas.android.com/apk/res/android"
+	android:keyWidth="15.000002%p"
+	android:keyHeight="50dp"
+	android:horizontalGap="0.0px"
+	android:verticalGap="0.0px" >
+	
+	<Row>
+		<Key android:codes="4161"  android:keyLabel="၁" android:keyEdgeFlags="left"/>
+		<Key android:codes="4162"  android:keyLabel="၂" />
+		<Key android:codes="4163"  android:keyLabel="၃" />
+		<Key  android:keyOutputText="+"   android:keyLabel="+"  android:keyEdgeFlags="right"/>
+	</Row>
+	<Row>
+		<Key android:codes="4164"  android:keyLabel="၄" android:keyEdgeFlags="left"/>
+		<Key android:codes="4165"  android:keyLabel="၅" />
+		<Key android:codes="4166"  android:keyLabel="၆" />
+		<Key  android:keyOutputText="-"   android:keyLabel="-" android:keyEdgeFlags="right"/>
+	</Row>
+	<Row>
+		<Key android:codes="4167"  android:keyLabel="၇" android:keyEdgeFlags="left"/>
+		<Key android:codes="4168"  android:keyLabel="၈" />
+		<Key android:codes="4169"  android:keyLabel="၉" />
+		<Key android:codes="-5" 
+			android:keyIcon="@drawable/back_space"
+			android:iconPreview="@drawable/back_space"
+		    android:isRepeatable="true" android:keyEdgeFlags="right"/>
+	</Row>
+	<Row>
+		<Key android:codes="44" android:keyLabel="," android:keyEdgeFlags="left"/>
+		<Key android:codes="4160"  android:keyLabel="၀" />
+		<Key android:codes="46" android:keyLabel="."/>
+		<Key android:codes="2300"
+			android:keyIcon="@drawable/kb_hide"
+			android:iconPreview="@drawable/kb_hide" android:keyEdgeFlags="right"/>
+	</Row>
+</Keyboard>

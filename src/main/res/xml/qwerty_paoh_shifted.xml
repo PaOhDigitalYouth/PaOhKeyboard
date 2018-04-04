@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10.000002%p"
+    android:horizontalGap="0.0px"
+    android:verticalGap="0.0px"  
+    android:keyHeight="@dimen/key_height">
+	
+	<Row android:keyWidth="11.11111111111111%p" android:keyHeight="40dp">
+		<Key android:codes="2299" android:keyIcon="@drawable/change_theme" android:iconPreview="@drawable/change_theme"/>
+
+		<Key android:codes="2301"
+			android:keyIcon="@drawable/open_with"
+			android:iconPreview="@drawable/open_with"/>
+		<Key android:codes="8888"
+			android:keyIcon="@drawable/emoji"
+			android:iconPreview="@drawable/emoji"/>
+		<Key android:codes="2303"
+			android:keyIcon="@drawable/numpad"
+			android:iconPreview="@drawable/numpad"/>
+
+		<Key android:codes="4137" android:keyLabel="ဩ" android:popupKeyboard="@xml/popup" android:popupCharacters=" ဪ "/>
+		<Key android:codes="4174"  android:keyLabel="၎" />
+		<Key android:codes="4107"  android:keyLabel="ဋ" />
+		<Key android:codes="4109" android:keyEdgeFlags="right" android:keyLabel="ဍ" />
+		<Key android:codes="4241"  android:keyLabel="႑" />
+	</Row>
+	
+	<Row>
+		<Key android:codes="4104" android:keyEdgeFlags="left" android:keyLabel="ဈ" />
+		<Key android:codes="4242"   android:keyLabel="႒" />
+		<Key android:codes="4110"   android:keyLabel="ဎ" />
+		<Key android:codes="4131"  android:keyLabel="ဣ" />
+		<Key android:codes="4132" android:popupKeyboard="@xml/popup" android:popupCharacters="" android:keyLabel="ဤ" />
+		<Key android:codes="4230"  android:keyLabel="ႆ" />
+		<Key android:codes="4172"  android:keyLabel="၌" />
+		<Key android:codes="4173"  android:keyLabel="၍" />
+		<Key android:codes="4133"   android:keyLabel="ဥ" />
+		<Key android:codes="4111" android:popupKeyboard="@xml/popup" android:popupCharacters="ၰ" android:keyEdgeFlags="right" android:keyLabel="ဏ" />
+	</Row>
+		
+		
+	<Row>
+		<Key android:horizontalGap="4.999995%p" android:codes="4119" android:popupCharacters="ၺ" android:popupKeyboard="@xml/popup" android:keyEdgeFlags="left" android:keyLabel="ဗ" />
+		<Key android:codes="4157,4232,4233"  android:keyLabel="ွ" android:popupKeyboard="@xml/popup" android:popupCharacters="ႈႉ"/>
+		<Key android:codes="4142"  android:keyLabel="ီ"/>	
+		<Key android:codes="4156,4234"  android:keyLabel="ြ" android:popupKeyboard="@xml/popup" android:popupCharacters="ႊ" />
+		<Key android:codes="4150"  android:keyLabel="ံ" />
+		<Key android:codes="4146"  android:keyLabel="ဲ"/>
+		<Key android:codes="4135"  android:keyLabel="ဧ" />	
+		<Key android:codes="4115" android:popupKeyboard="@xml/popup" android:popupCharacters="ၶ" android:keyLabel="ဓ" />
+		<Key android:codes="4114" android:popupKeyboard="@xml/popup" android:keyEdgeFlags="right" android:popupCharacters="ၵ" android:isModifier="true" android:keyLabel="ဒ" />
+	</Row>
+	
+	<Row>
+		<Key android:codes="-101" android:keyEdgeFlags="left" android:isModifier="true" android:isSticky="false"
+			android:keyIcon="@drawable/sym_keyboard_shift_on"
+			android:iconPreview="@drawable/sym_keyboard_shift_on" />
+		<Key android:codes="20008" android:popupKeyboard="@xml/popup" android:popupCharacters="ၨ" android:keyLabel="ဇ" />
+		<Key android:codes="4108" android:popupKeyboard="@xml/popup" android:popupCharacters="ၭ" android:keyLabel="ဌ" />
+		<Key android:codes="20004" android:popupKeyboard="@xml/popup" android:popupCharacters="ၣ" android:keyLabel="ဃ" />
+		<Key android:codes="4128" android:popupKeyboard="@xml/popup"  android:keyLabel="ဠ" />
+		<Key android:codes="4125" android:popupCharacters=" " android:keyLabel="ဝ" />
+		<Key android:codes="4175" android:keyLabel="၏" />
+		<Key android:codes="4170" android:keyLabel="၊" />
+		<Key android:codes="4171" android:keyLabel="။"  />
+		<Key android:codes="-5" android:keyEdgeFlags="right" android:isModifier="true" android:isRepeatable="true" 
+			android:keyIcon="@drawable/back_space"
+			android:iconPreview="@drawable/back_space"/>
+	</Row>
+	
+	<Row android:rowEdgeFlags="bottom">
+		<Key android:keyWidth="15%p" android:codes="-103" android:isModifier="true" android:keyEdgeFlags="left" 
+			android:keyIcon="@drawable/lang"
+			android:iconPreview="@drawable/lang"/>
+
+		<Key android:keyWidth="14.999998%p" android:codes="20000" android:keyLabel= "§"/>
+			
+		<Key android:codes="4123,4240" android:popupKeyboard="@xml/popup" android:popupCharacters="႐" android:keyLabel="ရ" />
+			
+		<Key android:keyWidth="29.999996%p" android:codes="32" android:keyLabel=""/>
+		
+		<Key android:codes="4098" android:popupKeyboard="@xml/popup" android:popupCharacters="ၢ"  android:isModifier="true" android:keyLabel="ဂ" />
+
+		<Key android:keyWidth="20%p" android:codes="10" android:keyEdgeFlags="right" android:isModifier="true"
+			android:keyIcon="@drawable/return_kb"
+			android:iconPreview="@drawable/return_kb" />
+	</Row>
+
+</Keyboard>
+
+

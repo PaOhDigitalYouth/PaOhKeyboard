@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.paohdigitalyouth.paohkeyboard.SettingActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:layout_centerVertical="true"
+           android:id="@+id/fontIv"
+           app:srcCompat="@drawable/font"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:id="@+id/fontTv"
+           android:textColor="#000"
+           android:layout_marginLeft="10dp"
+           android:text="Embed Font"
+           android:layout_toRightOf="@id/fontIv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@id/fontIv"
+           android:text="To uncheck only if PaOh Letters \ndisplay on Keyboard"
+           android:layout_below="@id/fontTv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <CheckBox
+           android:id="@+id/fontCheck"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+   </RelativeLayout>
+</RelativeLayout>
